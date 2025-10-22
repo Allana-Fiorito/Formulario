@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do Candidato</title>
+    <link rel="stylesheet" href="form1.css">
+</head>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+<body>
+    <main>
+        <p><h1>Cadastro do Candidato</h1></p>
+        <p>* Campos obrigatórios</p>
+        <form action="https://formspree.io/f/xpwybkak">
+            <fieldset>
+                <legend><h2>Informações pessoais</h2></legend>
+                    <div>
+                        <label for="nome" class="lblNome">* Nome
+                            <br>
+                            <input type="text" name="nome" id="nomeId" size="39" value="" maxlength="60" placeholder="Digite o seu nome completo" required></label>
+                    </div>
+                    <!-- <br> -->
+                    <div>
+                        <label for="dataNasc" class="lblDataNasc">* Data de nascimento
+                            <br>
+                            <input type="date" name="dataNasc" id="dataNascId"></label>
+                    </div>
+                    <!-- <br> -->
+                    <div>
+                        <label for="idade" class="lblIdade">* Idade
+                            <br>
+                            <input type="number" name="idade" id="idadeId" size="10" placeholder="Digite a sua idade" required>
+                        </label>
+                    </div>
+                    <!-- <br> -->
+                    <div>
+                        <label for="sexo" class="lblSexo">* Sexo
+                            <br>
+                            <select name="sexo" id="sexoId" required>
+                                <option selected disabled>Selecione</option>
+                                <option value="">Masculino</option>
+                                <option value="">Feminino</option>
+                                <option value="">Não especificado</option>
+                            </select>
+                        </label>
+                    </div>
+                    <!-- <br> -->
+                    <div>
+                        <label for="cpf" class="lblCpf">* CPF
+                            <br>
+                            <input type="text" name="cpf" id="cpfId" maxlength="15" placeholder="000.000.000-00" required></label>
+                    </div>
+                    <!-- <br> -->
+                    <div>
+                        <label for="estadoCivil" class="lblEstCivil">* Estado civil
+                            <br>
+                            <select name="estadoCivil" id="estadoCivilId" required>
+                            <option selected disabled>Selecione</option>
+                            <option value="">Solteiro(a)</option>
+                            <option value="">Casado(a)</option>
+                            <option value="">Viúvo(a)</option>
+                            <option value="">Divorciado(a)</option>
+                        </select>
+                    </label>
+                </div>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend><h2>Informações de Contato</h2></legend>
+                <div>
+                    <label for="endereco" class="lblEndereco">* Rua, nº
+                        <br>
+                        <input type="text" name="endereco" id="enderecoId" size="39" required></label>
+                </div>
+                <!-- <br> -->
+                <div>
+                    <label for="complemento" class="lblComple">Complemento
+                        <br>
+                        <input type="text" name="complemento" id="complementoId" size="39"></label>
+                </div>
+                <!-- <br> -->
+                <div>
+                    <label for="bairro" class="lblBairro">* Bairro
+                        <br>
+                        <input type="text" name="bairro" id="bairroId" size="39" maxlength="50" required></label>
+                </div>
+                <!-- <br> -->
+                <div>
+                    <label for="cep" class="lblCep">* CEP
+                        <br>
+                        <input type="text" name="cep" id="cepId" size="30" placeholder="0000-000" required></label>
+                </div>
+                <!-- <br> -->
+                <div>
+                    <label for="uf" class="lblUf">* UF
+                        <br>
+                        <select name="uf" id="ufId" required>
+                        <option selected disabled>Selecione</option>
+                        <option value="">SP</option>
+                        <option value="">AC</option>
+                        <option value="">AL</option>
+                        <option value="">AM</option>
+                        <option value="">AP</option>
+                        <option value="">BA</option>
+                        <option value="">CE</option>
+                        <option value="">DF</option>
+                        <option value="">ES</option>
+                        <option value="">GO</option>
+                        <option value="">MA</option>
+                        <option value="">MG</option>
+                        <option value="">MS</option>
+                        <option value="">MT</option>
+                        <option value="">PA</option>
+                        <option value="">PB</option>
+                        <option value="">PE</option>
+                        <option value="">PI</option>
+                        <option value="">PR</option>
+                        <option value="">RJ</option>
+                        <option value="">RN</option>
+                        <option value="">RO</option>
+                        <option value="">RR</option>
+                        <option value="">RS</option>
+                        <option value="">SC</option>
+                        <option value="">SE</option>
+                        <option value="">TO</option>
+                    </select></label>
+                </div>
+                <!-- <br> -->
+                <div>
+                    <label for="celular" class="lblCelular">* Celular com DDD
+                        <br>
+                        <input type="text" name="celular" id="phone_with_dddId" placeholder="00-00000-0000" required></label>
+                </div>
+                <!-- <br> -->
+                <div>
+                    <label for="email" class="lblEmail">* E-mail
+                        <br>
+                        <input type="text" name="email" id="emailId" size="39" required></label>
+                </div>
+                <!-- <br> -->
+                <div>
+                    <textarea name="comentSugest" id="comentSugestId" placeholder="Comentários e sugestões" style="resize: none" cols="50" rows="10"></textarea>
+                </div>
+                <br>
+                <div class="botoes">
+                    <button type="submit" class="btnEnviar">Enviar</buttonclass=>
+                    <button type="reset" class="btnReset">Limpar</buttonclass=>
+                </div>
+                <br>
+            </fieldset>
+            <!--Scripts das máscaras:-->
+            <script>
+                $('#cpfId').mask('000.000.000-00', {reverse: true});
+            </script>
+            <script>
+                $('#cepId').mask('00000-000');
+            </script>
+            <script>
+                $('#phone_with_dddId').mask('(00) 0000-0000');
+            </script>
+        </form>
+        <br>
+    </main>
+</body>
+</html>

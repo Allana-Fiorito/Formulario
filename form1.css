@@ -1,0 +1,97 @@
+*{
+    font-family: cursive;
+    color: rgb(17, 59, 59);
+}
+body{
+    background-image: linear-gradient(lightcyan, paleturquoise 15%, paleturquoise 70%, darkcyan);
+}
+p, h1, body{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    text-shadow: 0 5px 7px rgb(0, 110, 110);
+    color: rgb(4, 77, 77);
+}
+fieldset{
+    width: auto;
+    background-image: linear-gradient(lightcyan,rgb(176, 226, 243) 40%, rgb(176, 226, 243) 60%, lightcyan);
+    border-radius: 40px;
+    border-color: rgb(59, 207, 192);
+    border-width: 13px;
+    border-style: double;
+    box-shadow: 0 15px 10px rgba(0, 100, 100, 0.4);
+}
+input, select, textarea{ /*Configura ambos ao mesmo tempo*/
+    color: darkcyan;
+    border-width: 3px;
+    border-radius: 7px;
+    border-style: groove;
+    border-color: darkturquoise;
+    margin-bottom: 12px;
+}
+input::placeholder{
+    color: darkcyan;
+}
+input:focus, select:focus, textarea:focus{
+    outline: none; /*Elimina o contorno preto do campo quando selecionado!*/
+    color: darkred;
+    background-color: #fff3de;
+    border-style: inset;
+    border-color: rgb(255, 156, 64);
+    border-width: 3px;
+    border-radius: 15px;
+}
+div{
+    /* position: relative; */
+    display: flex;
+    column-gap: 90px;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+.botoes{
+    display: flex;
+    justify-content: center;
+}
+.btnEnviar{
+    width: 90px;
+    height: 35px;
+    background-image: linear-gradient(rgb(155, 255, 155) 7%, white 15%, rgb(0, 70, 27) 23%, rgb(0, 70, 27) 35%, rgb(0, 182, 0));
+    border-style: groove;
+    border-color: darkcyan;
+    border-radius: 10px;
+    border-width: 4px;
+    color: white;
+    font-size: 16px;
+    text-shadow: 0 3px 3px black;
+}
+.btnEnviar:hover{
+    background-image: linear-gradient(rgb(155, 255, 155) 7%, white 10%, rgb(0, 145, 0) 23%, rgb(0, 133, 0) 35%, lime);
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+}
+.btnEnviar:active{
+    background-image: linear-gradient(rgb(0, 36, 0) 10%, rgb(0, 145, 0) 80%, lime);
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: none;
+}
+.btnReset{
+    width: 90px;
+    height: 35px;
+    background-image: linear-gradient(lightpink 7%, white 15%, rgb(61, 0, 26) 23%, rgb(61, 0, 26) 35%, rgb(165, 0, 0));
+    border-style: groove;
+    border-color: darkcyan;
+    border-radius: 10px;
+    border-width: 4px;
+    color: white;
+    font-size: 16px;
+    text-shadow: 0 3px 3px black;
+}
+.btnReset:hover{
+    background-image: linear-gradient(lightpink 7%, white 10%, rgb(145, 0, 0) 23%, rgb(133, 0, 0)5%, red);
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+}
+.btnReset:active{
+    background-image: linear-gradient(rgb(36, 0, 0) 10%, rgb(145, 0, 0) 80%, red);
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: none;
+}
